@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Resume</title>
+            <style>
+           
+            <body style="background-color:grey;">
+                body {background-color: rgb(253, 253, 253);}
+                h1   {text-align: center;color: rgb(0, 0, 0);}
+                
+                .right{float: right;}
+                table, th, td {
+                 border: 1px solid black;
+                 border-collapse: collapse;
+                }
+                
+                </style>
+                
+                
+    </head>
+    <body background=https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000>
+
+    <body>
+        <h1 align ="centre" > <b>Vallabha Resume</b><hr></h1>
+        <p>
+            R ESWAR VALLABHA<br>
+            <img class = "right" src="https://media-exp2.licdn.com/dms/image/C4D03AQGg3s6Kc1oSDg/profile-displayphoto-shrink_200_200/0/1639041813436?e=2147483647&v=beta&t=VRZ7My_kYqHzei8m0YXIposepwDTFyzSolKl2JuWJaI" width="250" height="100">
+           9/1137-A<br>
+            Gooty Rs<br>
+            Andhra Pradesh - 515402<br>
+            Ph: 891956**<br>
+            Email : eashwarvallabha180@gmail.com
+            
+            
+        </p>
+        <div>
+        <hr>
+            <h3><center>Details<center></h3>
+        </div>
+        <hr>
+        <dl>
+            <dt><b>Career Objective</b></dt><br>
+            <dd>To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.<br>
+Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company..</dd>
+          </dl>
+        <hr>
+        <h3>Academic Profile</h3>
+        <table >
+            <thead>
+              <tr>
+                <th scope="col">Education</th>
+                <th scope="col">School/College</th>
+                <th scope="col">Board/University</th>
+                <th scope="col">Percentage of Marks</th>
+                <th scope="col">Year of Passing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">B.Tech</th>
+                <td>college</td>
+                <td>karunya University</td>
+                <td>75%</td>
+                <td>2024</td>
+              </tr>
+             
+            </tbody>
+          </table>
+          <hr>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Data Structures</li>
+            <li>Python</li>
+            <li>Web Technology</li>
+            
+          </ul><br><br>
+          <hr>
+          
+          <hr>
+        
+         
+    
+
+        
+        
+        <h1><center>Thankyou</center></h1>
+        <hr><hr>
+
+    </body>
+</html>
