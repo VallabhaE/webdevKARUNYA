@@ -1,0 +1,77 @@
+
+body {
+    background-color: lightblue;
+  }
+.a {
+    font-size: 48px;
+    color:blue;
+    text-shadow: 2px  3px 10px;
+  }
+ 
+  
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+li {
+    float: left;
+
+}
+li a{
+    display: block;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding:10px;
+    text-decoration: none;
+}
+.active{
+    background-color: gray;
+    color:aliceblue;
+}
+
+li a:hover{
+    background-color: orange;
+    color:white;
+}
+
+.bg {
+    background-image: url(https://wallpaperaccess.com/full/7615491.jpg);
+    
+}
+
+.two{
+    float:left;
+    width:20%;
+    padding:10px;
+    height:300px;
+}
+.one::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.column{
+    float:left;
+    width:20%;
+    padding:10px;
+    height:300px;
+}
+.row::after{
+    content:"";
+    display: table;
+    clear:both;
+}
+.aboutus{
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
