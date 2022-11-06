@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    text-align: center;
+    background-color: black;
+}
+h1{
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+fieldset{
+    height: 90px;
+}
+.track img{
+    position: absolute;
+
+}
+#start{
+    margin-left: 43%;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: crimson;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#reset{
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: crimson;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.choose img{
+    align-items: center;
+    padding-right: 50px;
+}
+.choose button{
+    align-items: center;
+    
+}
+.choose{
+    padding-left: 400px;
+}
+.track{
+    background-color: rgb(127, 214, 115);
+}
+.bottom{
+    background-color: black;
+    height: 50vh;
+}
+.car{
+    transform: transition 1s;
+}
+.car:hover{
+    translate: translateZ(10);
+}
