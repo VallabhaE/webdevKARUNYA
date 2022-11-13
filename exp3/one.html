@@ -1,187 +1,363 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="one.css">
-        <title><Experiment-3</title>
-    </head>
-    <body>
-        <h1 class="a"><center>Music</center></h1>
-        <div class="Navi">
-            <nav>
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Free</a></li>
-                    <li><a href="#">Paid</a></li>
-                </ul>
-            </nav>
+<head>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" href="one.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.skills_section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+	color: white;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: #f9004d;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #f9004d;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 80%;
+    animation: sass 2s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .js{
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.skill_bar .bar .react{
+    width: 75%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 70%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .express{
+    width: 65%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 60%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+</style>
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#service">Services</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#foot">Contact Us</a></li>
+			</ul>
+			<a href="#" class="btn">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<div class="name"><h1 class="first_name">Eswar <span class="last_name">Vallabha</span></h1></div>
+			<h3>I'am a Web Developer.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about" id="about">
+		<div class="main">
+			<img class="front_img" src="img/front.jpeg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!----------Skill Set------------>
+
+    <div class="skills_section" id="skills">
+        <div class="skills_head">
+            <h2>My <span>Skills</span></h2>
         </div>
-        <div class="image">
-            <center><img src="https://cdn.data.qbitcms.com/_userfiles/7/images/Blog/Customer_experiance/Content_image02.jpg"></center>
+
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>85%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>JQuery</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="sass"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>C</p>
+                    <P>75%</P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>C++</p>
+                    <P>70%</P>
+                </div>
+                <div class="bar">
+                    <span class="node"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java</p>
+                    <P>65%</P>
+                </div>
+                <div class="bar">
+                    <span class="express"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Python</p>
+                    <P>60%</P>
+                </div>
+                <div class="bar">
+                    <span class="mongo"></span>
+                </div>
+            </div>
         </div>
-        <div class="one">
-            <div class="two">
-                <a target="_blank" href="https://www.impactbnd.com/hubfs/blog-image-uploads/best-about-us-pages.jpg">
-                    <img class="aboutus" src="https://www.impactbnd.com/hubfs/blog-image-uploads/best-about-us-pages.jpg">
-                </a>
-            </div>
-            <div class="two">
-                <a href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-rap-songs-1583527287.png?crop=0.5xw:1xh;center,top&resize=480:*">
-                    <img class="aboutus" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-rap-songs-1583527287.png?crop=0.5xw:1xh;center,top&resize=480:*">
-                </a>
-            </div>
-            <div class="two">
-                <a href="https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762__340.png">
-                    <img class="aboutus" src="https://cdn.pixabay.com/photo/2016/12/15/12/24/contact-us-1908762__340.png">
-                </a>
-            </div>
-        </div>
-        <div class="bg">
-            <p style="color:red;">Welcome to our music Shop here all kind of music details Avaialable here,<br>Please Visit our page again and again and do share with your friends and family and <br>do funds to our bank account, so it will be very helpfull for us to get boost and make lot of this kind of websites and thank you</p>
-          </div>
-          <div class="row">
-            <div class="column">
-                <h2>Old Songs list</h2>
-    <p>Shaayad Meri Shaadi Ka Khayaal<br>
-        Saawan Kumar	 Kishore Kumar <br>
-        And Lata Mangeshkar<br>
-        Jaane Kya Sochkar	Gulzar	 Kishore Kumar <br>
-        Tari Ummed Tera Intezar	Sameer	 Kishore Kumar <br>
-        Koi Haseena Jab<br>
-        Anand Bakshi<br>
-         Kishore Kumar<br>
-        Roop Tera Mastana<br>
-        Anand Bakshi	Kishore Kumar<br>
-        Mere Sapno Ki Rani Kab Aayegi Tu<br>
-        Anand Bakshi	Kishore Kumar<br>
-        Pal Pal Dil Ke Paas Lyrics <br>
-        Rajinder Krishan	 Kishore Kumar And
-         Lata Mangeshkar
-        Mere Samne Wali Khidki	Rajendra Krishan	Kishore Kumar<br>
-        Aate Jaate Khoobsurat Awara Sadkon Pe<br>	Anand Bakshi	Kishore Kumar<br>
-        Yeh kya Hua 	Anand Bakshi	Kishore Kumar<br>
-        O Saathi Re Song (Male)	Anjaan	Kishore Kumar<br>
-        Mere Mehboob Qayamat Hogi	Anand Bakshi	Kishore Kumar<br>
-        Aake Seedhi Lagi Dil Pe lyrics	Shailendra	Kishore Kumar<br>
-        Humein Tumse Pyaar Kitna 	Majrooh Sultanpuri	Kishore Kumar<br>
-        Gaata Rahe Mera Dil 	S.D Barman	Kishore Kumar  And
-         Lata Mangeshkar<br>
-        Yeh Shaam Mastani	Anand Bakshi	Kishore Kumar<br>
-        Yeh Dosti  Hum Nahi Todenge	Anand Bakshi	Kishore Kumar And
-        RD Barman<br>
-        Rim Jhim Gire Sawan 	Yogesh	Kishore Kumar<br>
-        Chala Jata Hoon	Kishore Kumar	Kishore Kumar<br>
-        Bhanware Ki Gunjan	Hasrat Jaipuri	Kishore Kumar<br>
-        Zindagi Ke Safar Mein	Anand Bakshi	Kishore Kumar<br>
-        Neele Neele Ambar Par<br> </p>
-            </div>
-            <div class="column">
-                <h2>Latest Songs</h2>
-    <p>Chaka Chak – Atrangi ReChaka Chak – Atrangi Re<br>
-Aashiqui Aa Gayi – Radhe Shyam<br>
-Soch Liya – Radhe Shyam<br>
-Raataan Lambiyan – Shershaah<br>
-Mujhe Pyaar Pyaar Hai – Bhoot Police<br>
-Kabhii Tumhhe – Shershaah<br>
-Tip Tip | Sooryavanshi<br>
-Kusu Kusu – Satyameva Jayate 2<br>
-Tera Hua – Cash<br>
-Tere Siva Jag Mein – Tadap<br>
-Dil Nahin Todna Lyrics | Sardar Ka Grandson<br>
-Main Teri Ho Gayi Lyrics | Sardar Ka Grandson<br>
-Tu Mera Ho Gaya Hai – Tadap<br>
-Agar Tum Saath Ho Lyrics | Arijit Singh<br>
-Dhokha – Arijit Singh<br>
-Bol Do Na Zara Lyrics | Armaan Malik<br>
-Teri Bhabhi Lyrics – Neha Kakkar<br>
-Mud Mud Ke – Neha Kakkar<br>
-Muskurahat (Gangubai Kathiawadi) – Arijit Singh<br>
-Piya Re Piya – Yasser Desai<br>
-Bedardi Se Pyaar Ka Lyrics | Jubin Nautiyal<br>
-Dil Tera Lyrics – Benny Dayal | Neeti Mohan<br>
-Jhume Re Gori – Gangubai Kathiawadi<br>
-Shikayat – Gangubai Kathiawadi<br>
-Ranjha – Shershaah<br>
-Mann Bharrya 2 – Shershaah<br>
-Aaya Ye Jhund Hai – Jhund<br>
-Naach Meri Rani Lyrics In Hindi | Guru Randhawa<br>
-Sach Keh Raha Hai – Bpraak<br>
-Hanjugam – Bhuj<br>
-Zaalima Coca Cola – Bhuj<br>
-
-
-      
-            </div>
-            <div class="column">
-                <h2>Latest English songs</h2>
-               <p> Here are the some of all time famous rap songs :
-
-Lose Yourself - Eminem<br>
-
-Changes - 2pac<br>
-
-Juicy - Notorious B.I.G.<br>
-
-Stan - Eminem<br>
-
-Nuthin' but a 'G' Thang - Dr. Dre<br>
-
-Hit Em Up - 2Pac<br>
-
-Not Afraid - Eminem<br>
-
-The Message - Grandmaster Flash & The Furious Five<br>
-
-California Love - 2pac and Dr Dre<br>
-
-One Mic - Nas<br>
-Clear all filters
-<br>
-
-Into The Night
-prazkhanal
-2:20
-Download
-<br>
-
-
-Fun Life
-FASSounds
-1:49
-Download
-
-<br>
-
-Best Time
-FASSounds
-2:08
-Download
-<br>
-
-Energetic Hip-Hop
-Skilsel
-1:54
-Download
-<br>
-
-Goat
-prazkhanal
-2:18
-Download
-
-<br>
-
-</p>
-
-
-            </div>
-            <div class="three">
-                <p><b>Address</b><br>Andhrapradesh<br>ramagownieswar@karunya.edu.in<br>8919560012</p>
-            </div>
     </div>
-   
-    
-       
-    
-    </body>
+
+
+
+	<!-----service section start----------->
+	<div class="service" id="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>App Development</h5>
+				<div class="pra">
+					<p>App development process includes creating installable applications for the mobile devices and implementing backend services.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Mini Project</h5>
+				<div class="pra">
+					<p>A clear statement of the research objectives of the project. Explore the breadth of research that is being performed within the college.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div class="contact-me">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
+
+	<!------footer start--------->
+	<footer id="foot">
+		<p class="foot">Eswar Vallabha</p>
+		<p>Follow me in Instagram, FaceBook and Youtube</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">CopyRight 2022 By Eswar allabha</p>
+	</footer>
+</body>
 </html>
